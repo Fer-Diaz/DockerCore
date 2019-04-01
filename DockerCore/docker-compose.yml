@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockercore:
+    image: ${DOCKER_REGISTRY-}dockercore
+    build:
+      context: .
+      dockerfile: DockerCore\Dockerfile
